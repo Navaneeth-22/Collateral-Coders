@@ -36,7 +36,7 @@ export default function ReportsComp() {
       });
 
       console.log(records);
-      setItems(records);
+      setItems([...records]);
     };
 
     getRecords();
@@ -52,18 +52,17 @@ export default function ReportsComp() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {items.map((data) => {
-              data.prescription?.map((row) => {
-                {
-                  console.log(row);
-                }
+            {items.map((d) => {
+              console.log("data", d);
+              return d.data.prescription?.map((row) => {
                 return (
                   <TableRow
                     key={row.name}
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
                     <TableCell component="th" scope="row">
-                      {row.date}
+                      {/* {new Date().getTime} */}
+                      {/* {row.date.getTime()} */}
                     </TableCell>
                     <TableCell component="th" scope="row">
                       {row.med}
