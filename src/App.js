@@ -10,10 +10,10 @@ function App() {
     <Route path="/Register" exact>
       <Register />
     </Route> */}
-      <Route path="/" exact>
+      {/* <Route path="/" exact>
         <Redirect to="/Home" />
-      </Route>
-      <Route path="/Home" exact>
+      </Route> */}
+      <Route path="/" exact>
         <Home />
       </Route>
       {/* <Route path="/tweets" exact>

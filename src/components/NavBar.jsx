@@ -70,7 +70,7 @@ export default function NavBar() {
     <AppBar position="sticky">
       <CustomToolbar>
         <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
-          DemoCracy
+          Emids Healthcare 2022
         </Typography>
         <AssuredWorkloadIcon sx={{ display: { xs: "block", sm: "none" } }} />
         <SearchBar>

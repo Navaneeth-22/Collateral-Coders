@@ -1,9 +1,9 @@
-import { Box, Button, TextField } from "@mui/material";
+import { Box, Button, Input, TextField } from "@mui/material";
 import { addDoc, collection } from "firebase/firestore";
 import React, { useState } from "react";
 import { db } from "../utils/firebase/firebase.utils";
 
-export default function AddPatient({ patient }) {
+export default function Symptoms({ patient }) {
   const [fn, setfn] = useState("");
   const [mn, setmn] = useState("");
   const [ln, setln] = useState("");
@@ -57,34 +57,18 @@ export default function AddPatient({ patient }) {
       >
         <TextField
           id="outlined-name"
-          label="firstName"
-          value={patient ? patient?.firstName : fn}
+          label="Temperature"
+          value={fn}
           onChange={fnCH}
         />
         <TextField
           id="outlined-name"
-          label="secondName"
-          value={patient ? patient?.middleName : mn}
+          label="Pulse Rate"
+          value={mn}
           onChange={mnCH}
         />
-        <TextField
-          id="outlined-name"
-          label="middleName"
-          value={patient ? patient?.lastName : ln}
-          onChange={lnCH}
-        />
-        <TextField
-          id="outlined-name"
-          label="age"
-          value={patient ? patient?.age : age}
-          onChange={ageCH}
-        />
-        <TextField
-          id="outlined-name"
-          label="Gender"
-          value={patient ? patient?.gender : gender}
-          onChange={genderCH}
-        />
+        <TextField id="outlined-name" label="BP" value={ln} onChange={lnCH} />
+        <Input type="file"></Input>
         <Button onClick={register}>Register</Button>
       </Box>
     </>

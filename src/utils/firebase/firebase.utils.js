@@ -22,12 +22,12 @@ import {
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBy1XAwU-fzqGf-rfgGXEUfMue425NG-zM",
-  authDomain: "reg-comp.firebaseapp.com",
-  projectId: "reg-comp",
-  storageBucket: "reg-comp.appspot.com",
-  messagingSenderId: "959171443684",
-  appId: "1:959171443684:web:03e793495f16a3941ee5f1",
+  apiKey: "AIzaSyBUbSp2y7H66_kTVBDzmzqv3Z2-nLHtAGo",
+  authDomain: "collateral-coders.firebaseapp.com",
+  projectId: "collateral-coders",
+  storageBucket: "collateral-coders.appspot.com",
+  messagingSenderId: "969896913054",
+  appId: "1:969896913054:web:1e8e0cf1e6e8e02b69738f",
 };
 
 // Initialize Firebase
